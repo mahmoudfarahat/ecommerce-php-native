@@ -1,7 +1,8 @@
 <?php 
+include_once "../operations.php";
+include_once "../database.php";
 
-
-class Address {
+class Address extends database implements operations {
     private $id;
     private $street;
     private $building;
@@ -232,6 +233,23 @@ class Address {
         $this->updated_at = $updated_at;
 
        
+    }
+
+    function insertData()
+    {
+
+    }
+    function updateData()
+    {
+
+    }
+    function deleteData()
+    {
+
+    }
+    function selectAllData()
+    {
+
     }
 
 

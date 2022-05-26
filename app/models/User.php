@@ -1,7 +1,9 @@
 <?php 
+include_once "../operations.php";
+include_once "../database.php";
 
 
-class User{
+class User extends database implements operations{
     private $id;
     private $name;
     private $phone;
@@ -218,8 +220,26 @@ class User{
          
     }
 
+    function insertData()
+    {
+        $query = "INSERT INTO `users` (`users`.`name`, `users`.`phone`,`users`.`email`, `users`.`password` )
 
-    
+                VALUES ($this->name,$this->phone,$this->email,$this->password)";
+
+    }
+    function updateData()
+    {
+
+    }
+    function deleteData()
+    {
+
+    }
+    function selectAllData()
+    {
+
+    }
+
 }
 
 
