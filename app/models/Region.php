@@ -1,21 +1,22 @@
 <?php 
-include_once "../operations.php";
-include_once "../database.php";
 
-class Address extends database implements operations {
+
+include_once "../database.php";
+include_once "../operation.php";
+
+class Region extends database implements operations {
+
     private $id;
-    private $street;
-    private $building;
-    private $floor;
+    private $name;
     private $status;
-    private $flat;
-    private $notes;
-    private $region_id;
-    private $user_id;
+    private $logitude;
+    private $latitide;
+    private $rad;
+    private $city_id;
     private $created_at;
     private $updated_at;
 
-    /**
+       /**
      * Get the value of id
      */ 
     public function getId()
@@ -36,61 +37,21 @@ class Address extends database implements operations {
     }
 
     /**
-     * Get the value of street
+     * Get the value of name
      */ 
-    public function getStreet()
+    public function getName()
     {
-        return $this->street;
+        return $this->name;
     }
 
     /**
-     * Set the value of street
+     * Set the value of name
      *
      * @return  self
      */ 
-    public function setStreet($street)
+    public function setName($name)
     {
-        $this->street = $street;
-
-       
-    }
-
-    /**
-     * Get the value of building
-     */ 
-    public function getBuilding()
-    {
-        return $this->building;
-    }
-
-    /**
-     * Set the value of building
-     *
-     * @return  self
-     */ 
-    public function setBuilding($building)
-    {
-        $this->building = $building;
-
-       
-    }
-
-    /**
-     * Get the value of floor
-     */ 
-    public function getFloor()
-    {
-        return $this->floor;
-    }
-
-    /**
-     * Set the value of floor
-     *
-     * @return  self
-     */ 
-    public function setFloor($floor)
-    {
-        $this->floor = $floor;
+        $this->name = $name;
 
        
     }
@@ -116,85 +77,83 @@ class Address extends database implements operations {
     }
 
     /**
-     * Get the value of flat
+     * Get the value of logitude
      */ 
-    public function getFlat()
+    public function getLogitude()
     {
-        return $this->flat;
+        return $this->logitude;
     }
 
     /**
-     * Set the value of flat
+     * Set the value of logitude
      *
      * @return  self
      */ 
-    public function setFlat($flat)
+    public function setLogitude($logitude)
     {
-        $this->flat = $flat;
+        $this->logitude = $logitude;
 
        
     }
 
     /**
-     * Get the value of notes
+     * Get the value of latitide
      */ 
-    public function getNotes()
+    public function getLatitide()
     {
-        return $this->notes;
+        return $this->latitide;
     }
 
     /**
-     * Set the value of notes
+     * Set the value of latitide
      *
      * @return  self
      */ 
-    public function setNotes($notes)
+    public function setLatitide($latitide)
     {
-        $this->notes = $notes;
+        $this->latitide = $latitide;
 
        
     }
 
     /**
-     * Get the value of region_id
+     * Get the value of rad
      */ 
-    public function getRegion_id()
+    public function getRad()
     {
-        return $this->region_id;
+        return $this->rad;
     }
 
     /**
-     * Set the value of region_id
+     * Set the value of rad
      *
      * @return  self
      */ 
-    public function setRegion_id($region_id)
+    public function setRad($rad)
     {
-        $this->region_id = $region_id;
+        $this->rad = $rad;
 
        
     }
-
-    /**
-     * Get the value of user_id
+ /**
+     * Get the value of city_id
      */ 
-    public function getUser_id()
+    public function getCity_id()
     {
-        return $this->user_id;
+        return $this->city_id;
     }
 
     /**
-     * Set the value of user_id
+     * Set the value of city_id
      *
      * @return  self
      */ 
-    public function setUser_id($user_id)
+    public function setCity_id($city_id)
     {
-        $this->user_id = $user_id;
+        $this->city_id = $city_id;
 
        
     }
-
     /**
      * Get the value of created_at
      */ 
@@ -231,7 +190,12 @@ class Address extends database implements operations {
     public function setUpdated_at($updated_at)
     {
         $this->updated_at = $updated_at;
+
+      
     }
+
+
+
 
     function insertData()
     {
@@ -251,13 +215,12 @@ class Address extends database implements operations {
     }
 
 
+
+
+
+
+   
 }
-
-
-
-
-
-
 
 
 
