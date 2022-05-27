@@ -26,7 +26,7 @@ class userValidation {
     {
         $this->password = $password;
 
-        
+        return $this;
     }
 
     /**
@@ -45,6 +45,7 @@ class userValidation {
     public function setConfirm($confirm)
     {
         $this->confirm = $confirm;
+        return $this;
 
         
     }
@@ -66,6 +67,7 @@ class userValidation {
     {
         $this->email = $email;
 
+        return $this;
          
     }
 
@@ -73,7 +75,7 @@ class userValidation {
     {
         $errors =[];
         $pattern = "^[a-zA-Z]\w{3,14}$";
-        $patternMsg = " The password's first character must be a letter, it must contain at least 4 characters and no more than 15 characters and no characters other than letters, numbers and the underscore may be used";
+        $patternMsg = "wrong passwood fomrat";
         if(!$this->password){
             $errors['password'] = "<div class='alert alert-danger'> Password is Required</div>";
         }
@@ -99,7 +101,7 @@ class userValidation {
         $patternMsg = "Email validation. With this short expression you can validate
                       for proper email format. It's short and accurate.";
         if(!$this->email){
-            $errors = "<div class='alert alert-danger'> email is Required</div>";
+            $errors['email'] = "<div class='alert alert-danger'> email is Required</div>";
         }else{
             if(!preg_match($pattern,$this->email)){
                 $errors['pattern'] = "<div class='alert alert-danger'> wrong email fomrat</div>";
