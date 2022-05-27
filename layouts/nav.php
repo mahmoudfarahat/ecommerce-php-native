@@ -5,7 +5,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-6">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img alt="" src="assets/img/logo/logo.png">
                                 </a>
                             </div>
@@ -15,57 +15,57 @@
                                 <div class="main-menu">
                                     <nav>
                                         <ul>
-                                            <li class="top-hover"><a href="index.html">home</a>
+                                            <li class="top-hover"><a href="index.php">home</a>
                                                 <ul class="submenu">
-                                                    <li><a href="index.html">home version 1</a></li>
+                                                    <li><a href="index.php">home version 1</a></li>
                                                     <li><a href="index-2.html">home version 2</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="about-us.html">about</a></li>
-                                            <li class="mega-menu-position top-hover"><a href="shop.html">shop</a>
+                                            <li class="mega-menu-position top-hover"><a href="shop.php">shop</a>
                                                 <ul class="mega-menu">
                                                     <li>
                                                         <ul>
                                                             <li class="mega-menu-title">Categories 01</li>
-                                                            <li><a href="shop.html">Aconite</a></li>
-                                                            <li><a href="shop.html">Ageratum</a></li>
-                                                            <li><a href="shop.html">Allium</a></li>
-                                                            <li><a href="shop.html">Anemone</a></li>
-                                                            <li><a href="shop.html">Angelica</a></li>
-                                                            <li><a href="shop.html">Angelonia</a></li>
+                                                            <li><a href="shop.php">Aconite</a></li>
+                                                            <li><a href="shop.php">Ageratum</a></li>
+                                                            <li><a href="shop.php">Allium</a></li>
+                                                            <li><a href="shop.php">Anemone</a></li>
+                                                            <li><a href="shop.php">Angelica</a></li>
+                                                            <li><a href="shop.php">Angelonia</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
                                                         <ul>
                                                             <li class="mega-menu-title">Categories 02</li>
-                                                            <li><a href="shop.html">Balsam</a></li>
-                                                            <li><a href="shop.html">Baneberry</a></li>
-                                                            <li><a href="shop.html">Bee Balm</a></li>
-                                                            <li><a href="shop.html">Begonia</a></li>
-                                                            <li><a href="shop.html">Bellflower</a></li>
-                                                            <li><a href="shop.html">Bergenia</a></li>
+                                                            <li><a href="shop.php">Balsam</a></li>
+                                                            <li><a href="shop.php">Baneberry</a></li>
+                                                            <li><a href="shop.php">Bee Balm</a></li>
+                                                            <li><a href="shop.php">Begonia</a></li>
+                                                            <li><a href="shop.php">Bellflower</a></li>
+                                                            <li><a href="shop.php">Bergenia</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
                                                         <ul>
                                                             <li class="mega-menu-title">Categories 03</li>
-                                                            <li><a href="shop.html">Caladium</a></li>
-                                                            <li><a href="shop.html">Calendula</a></li>
-                                                            <li><a href="shop.html">Carnation</a></li>
-                                                            <li><a href="shop.html">Catmint</a></li>
-                                                            <li><a href="shop.html">Celosia</a></li>
-                                                            <li><a href="shop.html">Chives</a></li>
+                                                            <li><a href="shop.php">Caladium</a></li>
+                                                            <li><a href="shop.php">Calendula</a></li>
+                                                            <li><a href="shop.php">Carnation</a></li>
+                                                            <li><a href="shop.php">Catmint</a></li>
+                                                            <li><a href="shop.php">Celosia</a></li>
+                                                            <li><a href="shop.php">Chives</a></li>
                                                         </ul>
                                                     </li>
                                                     <li>
                                                         <ul>
                                                             <li class="mega-menu-title">Categories 04</li>
-                                                            <li><a href="shop.html">Daffodil</a></li>
-                                                            <li><a href="shop.html">Dahlia</a></li>
-                                                            <li><a href="shop.html">Daisy</a></li>
-                                                            <li><a href="shop.html">Diascia</a></li>
-                                                            <li><a href="shop.html">Dusty Miller</a></li>
-                                                            <li><a href="shop.html">Dame’s Rocket</a></li>
+                                                            <li><a href="shop.php">Daffodil</a></li>
+                                                            <li><a href="shop.php">Dahlia</a></li>
+                                                            <li><a href="shop.php">Daisy</a></li>
+                                                            <li><a href="shop.php">Diascia</a></li>
+                                                            <li><a href="shop.php">Dusty Miller</a></li>
+                                                            <li><a href="shop.php">Dame’s Rocket</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -95,7 +95,7 @@
                                             <li class="top-hover"><a href="#">pages</a>
                                                 <ul class="submenu">
                                                     <li><a href="about-us.html">about us </a></li>
-                                                    <li><a href="shop.html">shop Grid</a></li>
+                                                    <li><a href="shop.php">shop Grid</a></li>
                                                     <li><a href="shop-list.html">shop list</a></li>
                                                     <li><a href="product-details.html">product details</a></li>
                                                     <li><a href="cart-page.html">cart page</a></li>
@@ -111,14 +111,17 @@
                                     </nav>
                                 </div>
 								<div class="header-currency">
-									<span class="digit">USD <i class="ti-angle-down"></i></span>
+									<span class="digit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+  <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+  <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z"/>
+</svg>    
+                                    <i class="ti-angle-down"></i></span>
 									<div class="dollar-submenu">
 										<ul>
-											<li><a href="#">$ USD</a></li>
-											<li><a href="#">€ EUR</a></li>
-											<li><a href="#">£ GBP</a></li>
-											<li><a href="#">₹ INR</a></li>
-											<li><a href="#">¥ JPY</a></li>
+											<li><a href="login.php">Login</a></li>
+											<li><a href="register.php">Register</a></li>
+										 
 										</ul>
 									</div>
 								</div>
@@ -176,14 +179,14 @@
                                 <ul class="menu-overflow">
                                     <li><a href="#">HOME</a>
                                         <ul>
-                                            <li><a href="index.html">home version 1</a></li>
+                                            <li><a href="index.php">home version 1</a></li>
                                             <li><a href="index-2.html">home version 2</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">pages</a>
                                         <ul>
                                             <li><a href="about-us.html">about us </a></li>
-                                            <li><a href="shop.html">shop Grid</a></li>
+                                            <li><a href="shop.php">shop Grid</a></li>
                                             <li><a href="shop-list.html">shop list</a></li>
                                             <li><a href="product-details.html">product details</a></li>
                                             <li><a href="cart-page.html">cart page</a></li>
@@ -194,46 +197,46 @@
                                             <li><a href="contact.html">contact</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="shop.html"> Shop </a>
+                                    <li><a href="shop.php"> Shop </a>
                                         <ul>
                                             <li><a href="#">Categories 01</a>
                                                 <ul>
-                                                    <li><a href="shop.html">Aconite</a></li>
-                                                    <li><a href="shop.html">Ageratum</a></li>
-                                                    <li><a href="shop.html">Allium</a></li>
-                                                    <li><a href="shop.html">Anemone</a></li>
-                                                    <li><a href="shop.html">Angelica</a></li>
-                                                    <li><a href="shop.html">Angelonia</a></li>
+                                                    <li><a href="shop.php">Aconite</a></li>
+                                                    <li><a href="shop.php">Ageratum</a></li>
+                                                    <li><a href="shop.php">Allium</a></li>
+                                                    <li><a href="shop.php">Anemone</a></li>
+                                                    <li><a href="shop.php">Angelica</a></li>
+                                                    <li><a href="shop.php">Angelonia</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Categories 02</a>
                                                 <ul>
-                                                    <li><a href="shop.html">Balsam</a></li>
-                                                    <li><a href="shop.html">Baneberry</a></li>
-                                                    <li><a href="shop.html">Bee Balm</a></li>
-                                                    <li><a href="shop.html">Begonia</a></li>
-                                                    <li><a href="shop.html">Bellflower</a></li>
-                                                    <li><a href="shop.html">Bergenia</a></li>
+                                                    <li><a href="shop.php">Balsam</a></li>
+                                                    <li><a href="shop.php">Baneberry</a></li>
+                                                    <li><a href="shop.php">Bee Balm</a></li>
+                                                    <li><a href="shop.php">Begonia</a></li>
+                                                    <li><a href="shop.php">Bellflower</a></li>
+                                                    <li><a href="shop.php">Bergenia</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Categories 03</a>
                                                 <ul>
-                                                    <li><a href="shop.html">Caladium</a></li>
-                                                    <li><a href="shop.html">Calendula</a></li>
-                                                    <li><a href="shop.html">Carnation</a></li>
-                                                    <li><a href="shop.html">Catmint</a></li>
-                                                    <li><a href="shop.html">Celosia</a></li>
-                                                    <li><a href="shop.html">Chives</a></li>
+                                                    <li><a href="shop.php">Caladium</a></li>
+                                                    <li><a href="shop.php">Calendula</a></li>
+                                                    <li><a href="shop.php">Carnation</a></li>
+                                                    <li><a href="shop.php">Catmint</a></li>
+                                                    <li><a href="shop.php">Celosia</a></li>
+                                                    <li><a href="shop.php">Chives</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Categories 04</a>
                                                 <ul>
-                                                    <li><a href="shop.html">Daffodil</a></li>
-                                                    <li><a href="shop.html">Dahlia</a></li>
-                                                    <li><a href="shop.html">Daisy</a></li>
-                                                    <li><a href="shop.html">Diascia</a></li>
-                                                    <li><a href="shop.html">Dusty Miller</a></li>
-                                                    <li><a href="shop.html">Dame’s Rocket</a></li>
+                                                    <li><a href="shop.php">Daffodil</a></li>
+                                                    <li><a href="shop.php">Dahlia</a></li>
+                                                    <li><a href="shop.php">Daisy</a></li>
+                                                    <li><a href="shop.php">Diascia</a></li>
+                                                    <li><a href="shop.php">Dusty Miller</a></li>
+                                                    <li><a href="shop.php">Dame’s Rocket</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
