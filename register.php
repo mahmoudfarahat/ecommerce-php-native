@@ -46,39 +46,33 @@ if (isset($_POST['submit'])) {
 
             try {
                 //Server settings
-                $mail->SMTPDebug = SMTP::DEBUG_SERVER; //Enable verbose debug output
+                $mail->SMTPDebug =  SMTP::DEBUG_SERVER;  //Enable verbose debug output
                 $mail->isSMTP(); //Send using SMTP
-                $mail->Host = 'smtp.example.com'; //Set the SMTP server to send through
-                $mail->SMTPAuth = true; //Enable SMTP authentication
-                $mail->Username = 'user@example.com'; //SMTP username
-                $mail->Password = 'secret'; //SMTP password
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
-                $mail->Port = 465; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
+                $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
+                $mail->SMTPAuth = TRUE; //Enable SMTP authentication
+                $mail->Username =   'testmaildevelopment2022@gmail.com'; //SMTP username
+                $mail->Password = 'Test@123456789'; //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         //Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+                    $mail->Port       = 465;     
                 //Recipients
-                $mail->setFrom('from@example.com', 'Mailer');
-                $mail->addAddress('joe@example.net', 'Joe User'); //Add a recipient
-                $mail->addAddress('ellen@example.com'); //Name is optional
-                $mail->addReplyTo('info@example.com', 'Information');
-                $mail->addCC('cc@example.com');
-                $mail->addBCC('bcc@example.com');
-
-                //Attachments
-                $mail->addAttachment('/var/tmp/file.tar.gz'); //Add attachments
-                $mail->addAttachment('/tmp/image.jpg', 'new.jpg'); //Optional name
-
-                //Content
+                $mail->setFrom('testmaildevelopment2022@gmail.com', 'Ecommerce');
+                
+                $mail->addAddress($_POST['email']); //Name is optional
+              
                 $mail->isHTML(true); //Set email format to HTML
-                $mail->Subject = 'Here is the subject';
-                $mail->Body = 'This is the HTML message body <b>in bold!</b>';
-                $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                $mail->Subject = 'Veritication Code';
+                $mail->Body = '<p> Dear'.$_POST["name"].',</p>
+                               <P> Your Veritication Code is :<b>' .$code .'</b></p>
+                               <P> Thank you</p>' ;     ;
+                                ;     ;
+                // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                 $mail->send();
-                echo 'Message has been sent';
+                // header('location:check-code.php');
+
             } catch (Exception $e) {
                 echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
             }
-            header('location:check-code.php');
 
         } else {
             $errors['something'] = "<div class='alert alert-danger>Something went wrong</div>";
