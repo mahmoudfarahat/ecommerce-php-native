@@ -1,6 +1,6 @@
 <?php 
-include_once "../operations.php";
-include_once "../database.php";
+include_once "db/operations.php";
+include_once "db/database.php";
 
 
 class User extends database implements operations{
@@ -97,7 +97,7 @@ class User extends database implements operations{
      */ 
     public function setPassword($password)
     {
-        $this->password = $password;
+        $this->password = sha1($password);
 
         
     }
@@ -222,10 +222,11 @@ class User extends database implements operations{
 
     function insertData()
     {
-        $query = "INSERT INTO `users` (`users`.`name`, `users`.`phone`,`users`.`email`, `users`.`password` )
+        $query = "INSERT INTO `users` (`users`.`name`, `users`.`phone`,`users`.`email`, `users`.`password` , `users`.`gender`, `users`.`code` )
 
-                VALUES ($this->name,$this->phone,$this->email,$this->password)";
+                VALUES ('$this->name','$this->phone','$this->email','$this->password' , '$this->gender' ,$this->code)";
 
+       return $this->runDML($query);
     }
     function updateData()
     {

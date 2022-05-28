@@ -2,8 +2,8 @@
 include_once "layouts/header.php";
 include_once "layouts/nav.php ";
 include_once "app/validations/userValidation.php";
- 
-// include_once "app/models/User.php";
+
+include_once "app/models/User.php";
 
 if (isset($_POST['submit'])) {
 
@@ -19,15 +19,24 @@ if (isset($_POST['submit'])) {
     $emailValidation = $validation->emailValidation();
 
     if(empty($emailValidation) AND empty($passwordValidation)){
-        // $user = new User;
-        echo 5454;
-        // $user->setName($_POST['name']);
-        // $user->setPassword($_POST['password']);
-        // $user->setPhone($_POST['phone']);
-        // $user->setEmail($_POST['email']);
- 
+        $user = new User;
+        
+        $user->setName($_POST['name']);
+        $user->setPassword($_POST['password']);
+        $user->setEmail($_POST['email']);
+        $user->setPhone($_POST['phone']);
+        $user->setGender($_POST['gender']);
+        $code = rand(10000,99999);
+        // print_r(($code));
+        $user->setCode($code);
+        $result = $user->insertData();
+        if($result){
 
-        // $user->insertData();
+            header('location:check-code.php');
+
+        }else{
+            $errors['something'] ="<div class='alert alert-danger>Something went wrong</div>";
+        }
     }
 
     
@@ -66,6 +75,13 @@ if (isset($_POST['submit'])) {
                             <div class="login-register-tab-list nav">
                                 <a class="active" data-toggle="tab" href="#lg2">
                                     <h4> register </h4>
+                                    <?php if(isset($errors) && $errors )
+                                    {
+                                        foreach($errors As $key => $value)
+                                        {
+                                            echo $value;
+                                        }
+                                    } ?>
                                 </a>
                             </div>
    
@@ -83,7 +99,7 @@ if (isset($_POST['submit'])) {
                                                     }
                                                 }
                                                 ?>
-                                                <input type="phone" placeholder="Phone" >
+                                                <input type="phone" name="phone" placeholder="Phone" >
                                                 <input type="password" name="password" placeholder="Password">
                                                 <?php
                                                 if(isset($passwordValidation) && !empty($passwordValidation)){

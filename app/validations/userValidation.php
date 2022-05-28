@@ -74,7 +74,8 @@ class userValidation {
     public function passwordValidation()
     {
         $errors =[];
-        $pattern = "^[a-zA-Z]\w{3,14}$";
+           $pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/";
+
         $patternMsg = "wrong passwood fomrat";
         if(!$this->password){
             $errors['password'] = "<div class='alert alert-danger'> Password is Required</div>";
@@ -92,12 +93,15 @@ class userValidation {
             }
         }
         return $errors;
+
+        
     }
 
     public function emailValidation()
     {
         $errors =[];
-        $pattern = "^\w+[\w-\.]*\@\w+((-\w+)|(\w*))\.[a-z]{2,3}$";
+        $pattern = "/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/";
+
         $patternMsg = "Email validation. With this short expression you can validate
                       for proper email format. It's short and accurate.";
         if(!$this->email){
